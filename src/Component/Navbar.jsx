@@ -3,21 +3,11 @@ import { Link } from "react-router-dom";
 function Navbar() {
 
   return (
-    <nav className="bg-blue-500 text-white p-4">
-      <div className="flex gap-6">
-        <Link to="/">
-          Home
-        </Link>
-        <Link to="/dashboard">
-          Dashboard
-        </Link>
-        <Link to="/login">
-          Login
-        </Link>
-        <Link to="/signup">
-          Signup
-        </Link>
-      </div>
+    <nav className="bg-black text-white flex p-4 justify-evenly items-center">
+        <Link to="/" className="navhover">Home</Link>
+        <Link to="/dashboard" className="navhover">Dashboard</Link>
+        <Link to="/login" className="navhover">Login</Link>
+        <Link to="/signup" className="navhover">Signup</Link>
     </nav>
   );
 }
